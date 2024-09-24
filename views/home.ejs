@@ -1,0 +1,47 @@
+<%- include('./base/header.ejs') %>
+ <div class="container">
+    <div class="alert bg-success my-3">
+        <h4 class="text-center" style="color: white;">Add New Student</h4>
+   </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+           <div class="col"></div>
+           <div class="col">
+            <form action='/add/student' method="post">
+            <div>
+                <label class="form-label">Roll No</label>
+                <input type="text" class="form-control" name="rollNo">
+            </div>
+            <div>
+                <label class="form-label">firstName</label>
+                <input type="text" class="form-control" name="firstName">
+            </div>
+            <div>
+                <label class="form-label">lastName</label>
+                <input type="text" class="form-control" name="lastName">
+            </div>
+            <div>
+                <label class="form-label"> fatherName</label>
+                <input type="text" class="form-control" name="fatherName">
+            </div>
+            <div>
+              <label class="form-label">adharcardNo</label>
+              <input type="text" class="form-control" name="adharcardNo">
+          </div>
+          <div>
+            <label class="form-label">mobileNo</label>
+            <input type="text" class="form-control" name="mobileNo">
+        </div>
+         <input type="submit" value ="add student " class = "btn btn-warning w-100">
+           </div>
+
+          </form>
+
+           <div class="col"></div>
+
+           
+        </div>
+    </div>
+<%- include('./base/footer.ejs') %>
